@@ -21,7 +21,7 @@
             
             # Microsoft шрифты (Times New Roman и др.)
             corefonts       # Arial, Times New Roman, Courier New и др.
-            vistafonts      # Calibri, Cambria, Consolas и др.
+            vista-fonts     # Calibri, Cambria, Consolas и др.
           ];
 
           # Шрифты для корректного отображения по ГОСТ
@@ -34,7 +34,7 @@
             
             # Microsoft шрифты
             "${pkgs.corefonts}/share/fonts/truetype"
-            "${pkgs.vistafonts}/share/fonts/truetype"
+            "${pkgs.vista-fonts}/share/fonts/truetype"
           ];
 
           shellHook = ''

@@ -191,7 +191,10 @@
       size: size,
       x-label: x-label,
       y-label: y-label,
-      bar-style: gradient.linear(rgb("#4A90D9"), rgb("#67B8A7")),
+      bar-style: (idx) => {
+        let colors = (rgb("#4A90D9"), rgb("#67B8A7"), rgb("#F5A623"), rgb("#D0021B"), rgb("#8B5CF6"), rgb("#34D399"))
+        (stroke: none, fill: colors.at(calc.rem(idx, colors.len())))
+      },
     )
   })
 }
